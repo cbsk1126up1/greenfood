@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="청주 솥뚜껑 삼겹살. 좋은 고기는 복잡한 양념보다 불판 위에서 증명됩니다.">
+  <title>솥뚜껑 삼겹살 | 청주 숙성육 전문점</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="images.css">
+  <link rel="stylesheet" href="navigation.css">
+  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="modal-fix.css">
+  <link rel="stylesheet" href="logo.css">
+  <link rel="stylesheet" href="reservation-status.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home" aria-label="솥뚜껑 삼겹살 홈"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="20" fill="#20221d"/><path d="M10 25.5c2.4-8.2 21.6-8.2 24 0" fill="none" stroke="#f5f0e7" stroke-width="2.3" stroke-linecap="round"/><path d="M14 26.5h16" stroke="#df5527" stroke-width="2.4" stroke-linecap="round"/><path d="M18 13.5c-2 2.2-1.5 4.2 0 5.6M24 12c2 2.2 1.5 4.3 0 6.3M30 14c1.6 1.9 1.1 3.7-.2 5" fill="none" stroke="#df5527" stroke-width="1.8" stroke-linecap="round"/></svg></span><span><b>솥뚜껑</b><em>삼겹살</em></span></a>
+    <button class="mobile-menu" type="button" aria-label="메뉴 열기" aria-expanded="false"><i></i><i></i></button>
+    <nav class="nav" aria-label="주요 메뉴"><a href="#story">우리 이야기</a><a href="#menu">메뉴</a><a href="#space">매장 안내</a><a href="#visit">오시는 길</a><a class="reserve" href="#reserve-info" data-modal="reserve">예약하기</a><a class="nav-extra" href="#reserve-info" data-modal="check">예약확인</a><a class="nav-extra" href="#admin-info" data-modal="admin">관리자</a><a class="phone-booking" href="tel:04312341234"><span>전화 예약</span>043-1234-1234</a></nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">CHEONGJU · SOTDDUKKUNG SAMGYEOPSAL</p><h1>좋은 고기는<br><strong>불판 위에서</strong><br>증명됩니다.</h1><p>정직하게 숙성한 고기를 뜨거운 솥뚜껑에 올립니다.<br>오늘의 가장 맛있는 한 점을 정성으로 구워드릴게요.</p><div class="actions"><a class="button dark" href="tel:04312341234">전화하기 ↗</a><a class="line-link" href="#menu">메뉴 보기 ↓</a></div></div>
+      <div class="hero-photo"><img src="assets/hero-samgyeopsal.png" alt="솥뚜껑 위에서 맛있게 익고 있는 삼겹살과 김치"></div>
+      <p class="hero-hours"><b>OPEN</b> 11:00 — 21:00<br><small>매주 월요일 휴무</small></p><span class="hero-no">01</span>
+    </section>
+
+    <section class="section intro" id="story"><p class="eyebrow">OUR PROMISE</p><div class="columns"><h2>한 점의 삼겹살에<br><em>시간과 마음을</em><br>담았습니다.</h2><div><p>좋은 재료를 가장 맛있는 상태로 내어드리는 일. 그것이 솥뚜껑 삼겹살이 고집하는 기준입니다.</p><p>정감 있는 동네 맛집의 마음과 고급 숙성육 전문점의 기준을 한 상에 담아냅니다.</p><a class="line-link ink" href="#space">솥뚜껑의 기준 보기 →</a></div></div><div class="promises"><article><span>01</span><h3>좋은 고기</h3><p>고기 품질과 숙성에<br>타협하지 않습니다.</p></article><article><span>02</span><h3>정성의 서비스</h3><p>가장 맛있는 순간까지<br>직접 구워드립니다.</p></article><article><span>03</span><h3>푸짐한 한 상</h3><p>반찬과 찌개까지<br>든든하게 준비합니다.</p></article></div></section>
+
+    <section class="menu-section" id="menu"><div class="section menu-title"><p class="eyebrow">OUR MENU</p><div><h2>불판 위에서<br>완성되는 <em>진짜 맛.</em></h2><p>모든 고기는 주문 후 정성껏 준비합니다.</p></div></div><div class="tabs" role="tablist"><button class="active" data-menu="meat">고기</button><button data-menu="side">곁들임</button><button data-menu="meal">식사</button><button data-menu="drink">주류 · 음료</button></div><div class="section menu-list" id="menu-list"></div></section>
+
+    <section class="service"><div><p class="eyebrow">TABLE SERVICE</p><h2>고기는 맡겨주세요.<br><em>가장 맛있게</em> 구워드릴게요.</h2></div><div aria-hidden="true">HOT<br><span>♨</span></div></section>
+
+    <section class="section space" id="space"><p class="eyebrow">THE PLACE</p><div class="columns space-grid"><div class="space-art"><img src="assets/restaurant-interior.png" alt="따뜻한 조명과 솥뚜껑 테이블이 있는 솥뚜껑 삼겹살 매장 내부"><p>오늘도<br><b>맛있게</b></p></div><div><h2>웃음이 모이고,<br>맛있는 시간이<br><em>익어가는 곳.</em></h2><p>활기찬 회식부터 오붓한 데이트, 편안한 가족 식사까지. 44석 규모의 넉넉한 공간에서 마음껏 즐겨보세요.</p><ul><li><b>44석</b>의 편안한 좌석</li><li><b>단체석</b> 사전 예약 가능</li><li><b>회식 · 가족 모임</b> 환영</li></ul><a class="button outline" href="tel:04312341234">단체 예약 문의 ↗</a></div></div></section>
+
+    <section class="visit" id="visit"><div class="visit-copy"><p class="eyebrow">COME VISIT</p><h2>오늘, <em>솥뚜껑</em><br>앞에서 만나요.</h2><address>충청북도 청주시 서원구<br>사직대로 109</address><p class="contact"><b>전화</b><a href="tel:04312341234">043-1234-1234</a><br><b>영업</b>11:00 — 21:00 <small>매주 월요일 휴무</small></p><div class="actions"><a class="button dark" target="_blank" rel="noopener" href="https://map.naver.com/p/search/%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%84%9C%EC%9B%90%EA%B5%AC%20%EC%82%AC%EC%A7%81%EB%8C%80%EB%A1%9C%20109">네이버 지도 ↗</a><a class="button outline" target="_blank" rel="noopener" href="https://www.instagram.com/cjsk1126">Instagram ↗</a></div></div><div class="map"><div class="pin">솥뚜껑<br>삼겹살</div><p>CHEONGJU<br><b>SEO WON-GU</b></p></div></section>
+  </main>
+  <section class="admin-panel" id="admin-info" aria-labelledby="admin-title"><div class="admin-head"><div><p class="eyebrow">ADMIN · RESERVATION</p><h2 id="admin-title">예약 <em>관리</em></h2><p>오늘 이후 가장 가까운 방문 요청일 순으로 표시합니다.</p></div><button class="logout-button" type="button" id="logout-button">로그아웃</button></div><p class="admin-message" id="admin-message"></p><div class="admin-controls"><select id="search-field" aria-label="검색 조건"><option value="r_name">예약자명</option><option value="r_date">예약일자</option><option value="rs_date">예약신청일자</option></select><input id="search-keyword" type="search" placeholder="검색어를 입력하세요"><select id="status-filter" aria-label="예약 상태"><option value="all">전체자료</option><option value="r">예약중인자료만</option><option value="u">예약사용완료인자료만</option><option value="c">예약취소인자료만</option></select></div><div class="table-wrap"><table class="reservation-table"><thead><tr><th>고유번호</th><th>예약자 성명</th><th>예약일자</th><th>신청일자</th><th>인원</th><th>연락처</th><th>참고사항</th><th>예약상태</th></tr></thead><tbody id="reservation-rows"></tbody></table></div></section>
+  <section class="booking-modal" id="reserve-info" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="booking-title"><div class="booking-card"><button class="modal-close" type="button" aria-label="닫기">×</button><p class="eyebrow" id="modal-eyebrow">RESERVATION</p><h2 id="booking-title">맛있는 시간,<br><em>미리 준비할게요.</em></h2><form class="reservation-form" id="reservation-form"><label class="field">예약자 성명<input name="r_name" type="text" required maxlength="30" autocomplete="name"></label><label class="field">예약일자 · 시간<input name="r_date" type="datetime-local" required></label><label class="field">방문인원수<input name="r_number" type="number" min="1" value="1" required></label><label class="field">연락처<input name="r_tel" type="tel" required placeholder="010-0000-0000" autocomplete="tel"></label><label class="field">기타 참고사항<textarea name="r_content" maxlength="500" placeholder="알레르기, 유아 의자, 단체석 등 요청사항을 적어주세요."></textarea></label><p class="form-note">예약 신청 후 매장 확인을 통해 예약이 확정됩니다.</p><p class="form-result" id="form-result" role="status"></p><button class="button dark" type="submit">예약 신청하기 ↗</button></form><form class="reservation-form" id="admin-login-form" hidden><label class="field">관리자 이메일<input name="email" type="email" required autocomplete="username"></label><label class="field">비밀번호<input name="password" type="password" required autocomplete="current-password"></label><p class="form-result" id="login-result" role="status"></p><button class="button dark" type="submit">관리자 로그인</button></form><div id="check-content" hidden><p class="modal-copy">예약 확인 및 변경은 매장 전화로 도와드립니다. 예약자 성함과 방문 예정 시간을 알려주세요.</p><a class="button dark" href="tel:04312341234">043-1234-1234 전화 예약 ↗</a></div></div></section>
+  <footer><a class="logo" href="#home"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="20" fill="#f5f0e7"/><path d="M10 25.5c2.4-8.2 21.6-8.2 24 0" fill="none" stroke="#20221d" stroke-width="2.3" stroke-linecap="round"/><path d="M14 26.5h16" stroke="#df5527" stroke-width="2.4" stroke-linecap="round"/><path d="M18 13.5c-2 2.2-1.5 4.2 0 5.6M24 12c2 2.2 1.5 4.3 0 6.3M30 14c1.6 1.9 1.1 3.7-.2 5" fill="none" stroke="#df5527" stroke-width="1.8" stroke-linecap="round"/></svg></span><span><b>솥뚜껑</b><em>삼겹살</em></span></a><p>© 2026 솥뚜껑 삼겹살. ALL RIGHTS RESERVED.</p></footer>
+  <a class="home-button" href="#home" aria-label="홈으로 이동">↑ <span>홈</span></a>
+  <a class="quick-call" href="tel:04312341234">☎ 전화 문의</a>
+  <script type="module" src="script.js"></script>
+  <script type="module" src="reservation-status.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "rules": {
+    "reservation": {
+      ".read": "(auth != null && root.child('admins').child(auth.uid).exists()) || (query.orderByChild === 'r_tel' && query.equalTo != null)",
+      ".indexOn": ["r_tel"],
+      "$reservationId": {
+        ".write": "(!data.exists() && newData.hasChildren(['idx', 'r_name', 'r_date', 'rs_date', 'r_number', 'r_tel', 'r_status', 'r_content']) && newData.child('r_status').val() === 'r') || (auth != null && root.child('admins').child(auth.uid).exists())"
+      }
+    },
+    "admins": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && auth.token.admin === true"
+      }
+    }
+  }
+}
